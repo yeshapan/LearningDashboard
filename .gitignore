@@ -1,0 +1,19 @@
+# Ignore virtual environment
+venv/
+*.pyc
+__pycache__/
+
+# Ignore database files
+db.sqlite3
+
+# Ignore secret settings
+*.env
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
