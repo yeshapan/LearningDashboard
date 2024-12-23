@@ -1,12 +1,15 @@
 from django.db import models
 
 # Create your models here.
-from django.db import models
-from django.contrib.auth.models import AbstractUser
+
 
 # Custom user model
 from django.contrib.auth.models import AbstractUser
-from django.db import models
+from django.conf import settings
+
+# Example:
+created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
 
 class User(AbstractUser):
     ROLE_CHOICES = [('student', 'Student'), ('instructor', 'Instructor')]

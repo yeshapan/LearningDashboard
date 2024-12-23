@@ -91,6 +91,11 @@ DATABASES = {
 
 AUTH_USER_MODEL= 'dashboard.User'
 
+
+# Example:
+#created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
